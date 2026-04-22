@@ -1,6 +1,4 @@
 """
-generate.py
-────────────
 Load a saved checkpoint and generate stories.
 The tokeniser is loaded from the path saved during setup_data.py.
 
