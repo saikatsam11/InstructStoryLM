@@ -16,8 +16,6 @@ Usage:
     python generate.py --ckpt checkpoints/ckpt_best.pt \
                        --prompt "The dog ran to" \
                        --max_tokens 200 --temperature 0.9 --top_p 0.95
-
-                       add another file
 """
 
 import argparse
