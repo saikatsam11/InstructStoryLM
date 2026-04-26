@@ -10,8 +10,8 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader, random_split
 from tokenizers import Tokenizer
 
-from config import ModelConfig
-from gpt import GPT
+from Model.config import ModelConfig
+from Model.gpt import GPT
 
 
 # ── Fine-tune hyperparameters ────────────────────────────────────────────────
