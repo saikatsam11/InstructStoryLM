@@ -1,19 +1,13 @@
 """
-Load a saved checkpoint and generate stories.
-The tokeniser is loaded from the path saved during setup_data.py.
-
 Usage:
     # Interactive mode (type prompts in terminal)
-    python generate.py --ckpt checkpoints/ckpt_best.pt
+    python generate.py --ckpt ckpt_best.pt
 
     # One-shot
-    python generate.py --ckpt checkpoints/ckpt_best.pt \
-                       --prompt "Once upon a time there was a little girl"
+    python generate.py --ckpt ckpt_best.pt --prompt "Once upon a time there was a little girl"
 
     # Tweak sampling
-    python generate.py --ckpt checkpoints/ckpt_best.pt \
-                       --prompt "The dog ran to" \
-                       --max_tokens 200 --temperature 0.9 --top_p 0.95
+    python generate.py --ckpt ckpt_best.pt --prompt "The dog ran to" --max_tokens 200 --temperature 0.9 --top_p 0.95
 """
 
 import argparse
