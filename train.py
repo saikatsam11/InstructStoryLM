@@ -1,13 +1,3 @@
-"""
-train.py  —  tuned for RTX 4060 Ti 16GB
-─────────────────────────────────────────
-Single GPU:
-    python train.py
-
-Multi-GPU (if you have more than one):
-    torchrun --nproc_per_node=2 train.py
-"""
-
 import os, math, time, glob
 import numpy as np
 import torch
