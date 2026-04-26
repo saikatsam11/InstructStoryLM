@@ -14,8 +14,8 @@ import argparse
 import torch
 from tokenizers import Tokenizer
 
-from model.config import ModelConfig
-from model.gpt    import GPT
+from Model.config import ModelConfig
+from Model.gpt    import GPT
 
 
 # ─────────────────────────────────────────────────────────────────────────────
