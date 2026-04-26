@@ -5,8 +5,8 @@ import torch.distributed as dist
 from torch.nn.parallel  import DistributedDataParallel as DDP
 from torch.utils.data   import Dataset, DataLoader, DistributedSampler
 
-from model.config import ModelConfig
-from model.gpt    import GPT
+from Model.config import ModelConfig
+from Model.gpt    import GPT
 
 
 # ─────────────────────────────────────────────────────────────────────────────
