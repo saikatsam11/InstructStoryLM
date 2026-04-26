@@ -1,6 +1,7 @@
 *.pt
 *.pth
-*.txt
 __pycache__/
 *.pyc
 nlp/
+logs/
+.vscode/
