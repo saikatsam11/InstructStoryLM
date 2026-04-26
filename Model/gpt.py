@@ -2,7 +2,7 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from model.config import ModelConfig
+from Model.config import ModelConfig
 
 
 # ── Causal Self-Attention ─────────────────────────────────────────────────────
