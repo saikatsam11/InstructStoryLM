@@ -8,21 +8,9 @@ class ModelConfig:
     n_heads      : int   = 7
     n_layers     : int   = 7
     d_ff         : int   = 1792       # 4 × d_model
-    context_len  : int   = 256
+    context_len  : int   = 512        #Change it to 512 when running inference.py
     dropout      : float = 0.1
 
-    # ── 4060 Ti 16GB tuned settings ───────────────────────────────────────────
-    #
-    #   VRAM budget:
-    #     Model weights (bf16)   ~0.06 GB
-    #     Optimizer states(fp32) ~0.50 GB   (AdamW m + v)
-    #     Activations + grads    ~1.50 GB   (batch=128, ctx=256, 7 layers)
-    #     PyTorch overhead       ~0.50 GB
-    #     ─────────────────────  ────────
-    #     Total estimated        ~2.60 GB   (out of 16 GB — very safe)
-    #
-    #   Effective batch = 128 x 4 = 512 sequences = 131,072 tokens/step
-    #
     batch_size   : int   = 128
     grad_accum   : int   = 4          # effective batch = 512 seqs
     num_workers  : int   = 4
