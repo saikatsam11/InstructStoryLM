@@ -8,7 +8,7 @@ class ModelConfig:
     n_heads      : int   = 7
     n_layers     : int   = 7
     d_ff         : int   = 1792       # 4 × d_model
-    context_len  : int   = 512        #Change it to 512 when running inference.py
+    context_len  : int   = 256        #Change it to 512 when running inference.py
     dropout      : float = 0.1
 
     batch_size   : int   = 128
