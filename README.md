@@ -101,17 +101,6 @@ python train.py
 
 ### Instruction Fine-tuning
 
-> ⚠️ **Important:** Before running `finetune.py`, update `model/config.py`:
-> ```python
-> # Change this:
-> context_len : int = 256
-> 
-> # To this:
-> context_len : int = 512
-> ```
-> This is required because instruction-response pairs are longer
-> than pretraining sequences and need a larger context window.
-
 ```bash
 python finetune.py
 ```
